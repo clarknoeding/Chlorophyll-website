@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+}
+
+.navbar {
+    height: 6vh;
+    background-color: #050505;
+    box-shadow: 0px 10px 20px black;
+    position: relative;
+}
+
+.header {
+    height: 80vh;
+    background-color: #090909;
+    box-shadow: 0px 10px 20px black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.name {
+    color: white;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 6rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: inline;
+    width: 10%;
+    margin-right: 5%;
+
+    -webkit-animation: rotating 6s linear infinite;
+    -moz-animation: rotating 6s linear infinite;
+    -ms-animation: rotating 6s linear infinite;
+    -o-animation: rotating 6s linear infinite;
+    animation: rotating 6s linear infinite;
+}
+
+.about {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 2rem;
+}
+
+.invite {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inviteBtn {
+    width: 20%;
+    height: 8vh;
+    background-color: transparent;
+    color: #54ff32;
+    border-color: #54ff32;
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 5px;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.inviteBtn:hover {
+    color: white;
+    background-color: #54ff32;
+}
+
+/* animations and stuff */
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
